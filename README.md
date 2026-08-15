@@ -1,4 +1,4 @@
-# At-Tayyar (الطَّيَّار): Seated Jafari Salat Guide 📿♿
+# At-Tayyar (الطَّيَّار): Seated Salat Guide 📿♿
 
 **At-Tayyar** is a lightweight, privacy-focused, offline desktop companion application specifically designed by and for Muslim wheelchair users and individuals facing physical mobility challenges. 
 
@@ -8,7 +8,7 @@ Named in honor of **Ja'far al-Tayyar**—the noble companion whom Allah granted 
 
 ## Key Features ✨
 
-*   **Jafari Multi-Rakah Layouts**: Supports accurate structures for Fajr (2 Rakahs), Maghrib (3 Rakahs), and Dhuhr/Asr/Isha (4 Rakahs) prayers, complete with automated transitions for mid-prayer Tashahhud intervals.
+*   **Multi-Rakah Layouts**: Supports accurate structures for Fajr (2 Rakahs), Maghrib (3 Rakahs), and Dhuhr/Asr/Isha (4 Rakahs) prayers, complete with automated transitions for mid-prayer Tashahhud intervals.
 *   **Seated Sujud Guidelines**: Built-in textual references explicitly detailing the legitimate Jafari *Rukhsah* (concession) of using the thumb or the back of the hand as a valid Turbah/Mohr substitution for prostration when external clay tablets are unreachable.
 *   **Integrated Tasbih Counter**: Automatically transitions into a dedicated, hands-free tracking board for the **Tasbih of Lady Fatima Zahra (sa)** right after the final Tasleem.
 *   **High-Visibility Corner Counter**: Features a massive, ultra-bright red indicator (`Rakah: X / Y`) in the top-right margin for easy readability during lower postures (Ruku' and Sujud).
