@@ -17,7 +17,7 @@ class JafariSeatedApp:
 
 		# ⚙️ SET YOUR LOCAL PRAYER TIMES HERE (24-Hour Format "HH:MM")
 		self.prayer_times = {
-			"Fajr": "05:15", "Dhuhr": "12:30", "Asr": "16:00", "Maghrib": "19:45", "Isha": "21:00"
+			"Fajr": "5:15", "Dhuhr": "12:30", "Asr": "16:00", "Maghrib": "19:45", "Isha": "21:00"
 		}
 
 		self.current_step_idx = 0
