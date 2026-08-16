@@ -31,7 +31,7 @@ class JafariSeatedApp:
 			command=audio.play_athan, 
 			bg="#1e7e34", 
 			fg="white", 
-			font=("Arial", 12, "bold")
+			font=("Bouazzi Maghribi", 12, "bold")
 		)
 		self.play_button.pack(pady=10)
 
@@ -42,7 +42,7 @@ class JafariSeatedApp:
 			 command=audio.stop_athan,
 			bg="#dc3545", 
 			fg="white", 
-			font=("Arial", 12, "bold")
+			font=("Bouazzi Maghribi", 12, "bold")
 		)
 		self.stop_button.pack(pady=10)
 		self.check_prayer_time_loop()
@@ -67,10 +67,10 @@ class JafariSeatedApp:
 		self.streak_label = tk.Label(self.launcher_frame, text=f"🔥 Daily Habit Streak: {current_streak} Days", font=("Arial", 18, "bold"), fg="#FFD54F", bg="#000000")
 		self.streak_label.pack(pady=10)
 
-		launcher_title = tk.Label(self.launcher_frame, text="Select Your Daily Salat", font=("Arial", 28, "bold"), fg="#FFB300", bg="#000000")
+		launcher_title = tk.Label(self.launcher_frame, text="Select Your Daily Salat", font=("Bouazzi Maghribi", 28, "bold"), fg="#FFB300", bg="#000000")
 		launcher_title.pack(pady=15)
 
-		btn_config = {"font": ("Arial", 18, "bold"), "fg": "#FFFFFF", "bg": "#1A1A1A", "activebackground": "#333333", "activeforeground": "#FFFFFF", "width": 25, "pady": 12}
+		btn_config = {"font": ("Bouazzi Maghribi", 18, "bold"), "fg": "#FFFFFF", "bg": "#1A1A1A", "activebackground": "#333333", "activeforeground": "#FFFFFF", "width": 25, "pady": 12}
 		tk.Button(self.launcher_frame, text="Fajr (2 Rakahs)", command=lambda: self.setup_prayer_flow(2), **btn_config).pack(pady=8)
 		tk.Button(self.launcher_frame, text="Maghrib (3 Rakahs)", command=lambda: self.setup_prayer_flow(3), **btn_config).pack(pady=8)
 		tk.Button(self.launcher_frame, text="Dhuhr / Asr / Isha (4 Rakahs)", command=lambda: self.setup_prayer_flow(4), **btn_config).pack(pady=8)
@@ -92,7 +92,7 @@ class JafariSeatedApp:
 		self.rakah_counter_label = tk.Label(self.header_frame, text="", font=("Arial", 24, "bold"), fg="#FF3333", bg="#000000", anchor="e")
 		self.rakah_counter_label.pack(side="right")
 
-		self.arabic_label = tk.Label(self.prayer_frame, text="", font=("Arial", 42, "bold"), fg="#FFFFFF", bg="#000000", justify="center")
+		self.arabic_label = tk.Label(self.prayer_frame, text="", font=("Bouazzi Maghribi", 42, "bold"), fg="#FFFFFF", bg="#000000", justify="center")
 		self.arabic_label.pack(pady=20)
 		
 		self.action_label = tk.Label(self.prayer_frame, text="", font=("Arial", 18), fg="#B0BEC5", bg="#000000", justify="center")
