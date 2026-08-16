@@ -3,6 +3,7 @@ import tkinter as tk
 import os
 import time
 import threading
+import audio
 
 # Import step library and the tasbih counter dictionary parameters cleanly
 from data_library import JAFARI_STEPS, TASBIH_PHASES
@@ -23,7 +24,30 @@ class JafariSeatedApp:
         self.active_sequence = []
         self.last_triggered_minute = ""
         self.step_library = JAFARI_STEPS
-        
+                # Button to manually play the Athan
+        self.play_button = tk.Button(
+            root, 
+            text="Play Athan", 
+            command=audio.play_athan, 
+            bg="#1e7e34", 
+            fg="white", 
+            font=("Arial", 12, "bold")
+        )
+        self.play_button.pack(pady=10)
+
+        # Button to stop the Athan immediately
+        self.stop_button = tk.Button(
+            root, 
+            text="Stop Athan", 
+             command=audio.stop_athan,
+            bg="#dc3545", 
+            fg="white", 
+            font=("Arial", 12, "bold")
+        )
+        self.stop_button.pack(pady=10)
+        self.check_prayer_time_loop()
+
+
         # Tracking parameters
         self.in_tasbih_mode = False
         self.tasbih_phase_idx = 0
@@ -170,7 +194,7 @@ class JafariSeatedApp:
         else:
             self.title_label.config(text="Salat & Ta'qibat Complete")
             self.arabic_label.config(text="🌿")
-            self.action_label.config(text="May Allah accept your daily devotion, blessings, and grant you ease.")
+            self.action_label.config(text="May Allah accept your daily devotion and grant you ease.")
             self.footer_label.config(text="[ Press SPACEBAR to safely return to the selection menu ]")
 
     def prev_step(self, event=None):
@@ -207,6 +231,31 @@ class JafariSeatedApp:
             self.prayer_frame.pack_forget()
             self.streak_label.config(text=f"🔥 Daily Habit Streak: {self.load_local_streak()} Days")
             self.launcher_frame.pack(expand=True)
+
+    def check_prayer_time_loop(self):
+        """Checks the real-world clock against prayer times every 10 seconds."""
+        import datetime
+        import time
+
+        # 1. Get the current real-world time in 24-hour format
+        current_time_str = datetime.datetime.now().strftime("%H:%M")
+
+        # 2. Prevent multiple triggers inside the same minute
+        if current_time_str != self.last_triggered_minute:
+            
+            # For testing: Replace this with your actual local prayer string later
+            upcoming_prayer_time = "15:45" 
+            
+            if current_time_str == upcoming_prayer_time:
+                self.last_triggered_minute = current_time_str
+                audio.play_athan()
+                print(f"⏰ Automated Event: Triggering Athan automatically at {current_time_str}")
+
+        # 3. Schedule this function to run again automatically in 10 seconds
+        self.root.after(10000, self.check_prayer_time_loop)
+
+
+
 
 if __name__ == "__main__":
     window = tk.Tk()
