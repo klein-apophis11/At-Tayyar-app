@@ -2,7 +2,7 @@
 
 **At-Tayyar** is a lightweight, privacy-focused, offline desktop companion application specifically designed by and for Muslim wheelchair users and individuals facing physical mobility challenges. 
 
-Named in honor of **Ja'far al-Tayyar**—the noble companion whom Allah granted wings in Paradise—this application provides an intuitive visual guide to performing daily prayers accurately from a seated position according to the **Jafari (Shia) jurisprudence (Fiqh)**.
+Named in honor of **Ja'far al-Tayyar**—the noble companion whom Allah granted wings in Paradise—this application provides an intuitive visual guide to performing daily prayers accurately from a seated position according to the **Jafari Fiqh**.
 
 ---
 
