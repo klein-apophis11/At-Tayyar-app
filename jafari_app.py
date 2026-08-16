@@ -78,6 +78,8 @@ class JafariSeatedApp:
         # Precise key event configurations mapped natively to functions
         self.root.bind("<space>", self.next_step)
         self.root.bind("<BackSpace>", self.prev_step)
+        self.root.bind("<Escape>", self.cancel_step)
+
         
         threading.Thread(target=self.start_clock_loop, daemon=True).start()
 
@@ -144,6 +146,11 @@ class JafariSeatedApp:
             else:
                 self.rakah_counter_label.config(text="Pause")
         else:
+            if getattr(self, 'is_cancelled', False):
+                    self.is_cancelled = False; self.prayer_frame.pack_forget(); self.launcher_frame.pack(expand=True); return
+
+
+            
             if not self.in_tasbih_mode:
                 self.in_tasbih_mode = True
                 self.tasbih_phase_idx = 0
@@ -172,6 +179,14 @@ class JafariSeatedApp:
         if self.current_step_idx > 0:
             self.current_step_idx -= 1
             self.update_ui()
+    def cancel_step(self, event=None):
+             """Cancels the current prayer session and returns to the main menu."""
+             self.active_sequence = []
+             self.in_tasbih_mode = False
+             self.current_step_idx = 0
+             self.is_cancelled = True
+             self.update_ui()
+
 
     def next_step(self, event=None):
         if not self.active_sequence: return
