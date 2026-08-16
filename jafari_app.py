@@ -243,13 +243,17 @@ class JafariSeatedApp:
         # 2. Prevent multiple triggers inside the same minute
         if current_time_str != self.last_triggered_minute:
             
-            # For testing: Replace this with your actual local prayer string later
-            upcoming_prayer_time = "15:45" 
-            
-            if current_time_str == upcoming_prayer_time:
-                self.last_triggered_minute = current_time_str
-                audio.play_athan()
-                print(f"⏰ Automated Event: Triggering Athan automatically at {current_time_str}")
+                        # 3. Pull live prayer times calculated by your application logic
+            if hasattr(self, 'prayer_times') and self.prayer_times:
+                for prayer_name, prayer_time_val in self.prayer_times.items():
+                    # Clean up data strings to ensure a perfect format match
+                    formatted_prayer_time = str(prayer_time_val).strip()
+                    
+                    if current_time_str == formatted_prayer_time:
+                        self.last_triggered_minute = current_time_str
+                        audio.play_athan()
+                        print(f"⏰ Automated Athan Event: {prayer_name} triggered automatically at {current_time_str}")
+                        break # Exit the search loop once matched
 
         # 3. Schedule this function to run again automatically in 10 seconds
         self.root.after(10000, self.check_prayer_time_loop)
