@@ -9,9 +9,9 @@ Named in honor of **Ja'far al-Tayyar**—the noble companion whom Allah granted 
 ## Key Features ✨
 
 *   **Multi-Rakah Layouts**: Supports accurate structures for Fajr (2 Rakahs), Maghrib (3 Rakahs), and Dhuhr/Asr/Isha (4 Rakahs) prayers, complete with automated transitions for mid-prayer Tashahhud intervals.
-*   **Seated Sujud Guidelines**: Built-in textual references explicitly detailing the legitimate Jafari *Rukhsah* (concession) of using the thumb or the back of the hand as a valid Turbah/Mohr substitution for prostration when external clay tablets are unreachable.
-*   **Integrated Tasbih Counter**: Automatically transitions into a dedicated, hands-free tracking board for the **Tasbih of Lady Fatima Zahra (sa)** right after the final Tasleem.
-*   **High-Visibility Corner Counter**: Features a massive, ultra-bright red indicator (`Rakah: X / Y`) in the top-right margin for easy readability during lower postures (Ruku' and Sujud).
+*   **Seated Sujud Guidelines**: Built-in guide detailing the  *Rukhsah* (concession) of using the thumb or the back of the hand as a valid Turbah/Mohr substitution for prostration when turbahs/mohr are unavailable for a confusion-free experience.
+*   **Integrated Tasbih Counter**: Automatically transitions into a dedicated tracking board for the **Tasbih of Lady Fatima Zahra (sa)** right after the final Tasleem.
+*   **High-Visibility Corner Counter**: Features a ultra-bright red indicator (`Rakah: X / Y`) in the top-right margin for easy readability and keeping track of Ruku' and Sujud.
 *   **Total Security & Complete Privacy**: Operates 100% offline. Zero tracking scripts, zero internet connectivity, zero database logins, and **absolutely no microphone or camera access**. 
 
 ---
@@ -19,7 +19,7 @@ Named in honor of **Ja'far al-Tayyar**—the noble companion whom Allah granted 
 ## Control Mechanisms 📲
 
 To maintain complete physical peace and security without the threat of being spied on, the application features an interface controlled purely by manual input hardware:
-*   **Spacebar and Backspace Control**: Follow the steps of making du'a and the Tasbih counter seamlessly by hitting your wireless keyboard's spacebar. You can use the backspace if you make a mistake as well.
+*   **Spacebar, Escape and Backspace Controls**: Follow the steps of making du'a and the Tasbih counter seamlessly by hitting your wireless keyboard's spacebar. You can use the backspace if you make a mistake as well. Press ESC to return the menu.
 
 ---
 
