@@ -13,12 +13,12 @@
         "qiyam_1": {
             "title": "First Qiyam",
             "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ...",
-            "action": "Sit upright, remain steady, and recite Surah al-Hamd and a second Surah"
+            "action": "Sit upright, remain steady, and recite Surah al-Fatihah and a second Surah"
         },
         "qiyam_2": {
             "title": "Second Qiyam",
             "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ...",
-            "action": "Sit upright and recite Surah al-Hamd and a second Surah before Qunoot"
+            "action": "Sit upright and recite Surah al-Fatihah and a second Surah before Qunoot"
         },
         "qiyam_generic": {
             "title": "Qiyam",
@@ -38,7 +38,7 @@
         "sujud_1": {
             "title": "First Sujud",
             "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
-            "action": "Lean forward and place your forehead firmly down on your Turbah or prostration tablet"
+            "action": "Lean forward and place your forehead firmly down on your thumbs or turbah "
         },
         "jalsah": {
             "title": "Jalsah",
@@ -63,7 +63,7 @@
         "ruku_guide": {
             "title": "Ruku Guide",
             "arabic": "",
-            "action": "Seated Ruku placement rules for wheelchair bounds"
+            "action": "Seated Ruku placement rules for praying in wheelchair"
         },
         "sujud_guide": {
             "title": "Sujud Guide",
@@ -72,7 +72,8 @@
         }
     },
     "TASBIH_PHASES": [
-        "Phase 1 text...",
-        "Phase 2 text..."
+        "Allahu akbar",
+        "Alhamdullilah",
+        "Subhanallah"
     ]
 }
