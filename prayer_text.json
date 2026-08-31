@@ -62,13 +62,13 @@
         "tashahhud_mid": {
             "title": "Tashahhud",
             "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ...",
-            "transliteration": "Ashhadu an lā ilāha illal lāhu waḥdahu lā sharīka lah, wa ashhadu anna muḥammadan ʿabduhu wa rasūluh, allāhumma ṣalli ʿalā muḥammadin wa āli muḥammad.",
+            "transliteration": "Ashhadu an la ilaha illa-llah, wa ashhadu anna Muhammadan rasulullah.",
             "action": "Recite the mid-prayer Tashahhud declaration while seated upright"
         },
         "tashahhud_final": {
             "title": "Tashahhud & Salam",
             "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ... السَّلَامُ عَلَيْكُمْ...",
-            "transliteration": "Ash-hadu an la ilaha illa-llah, wahdahu la sharika lah, wa ash-hadu anna Muhammadan ‘abduhu wa rasuluh. Allahumma salli ‘ala Muhammadin wa ali Muhammad.",
+            "transliteration": "Ashhadu an la ilaha illa-llah, wa ashhadu anna Muhammadan rasulullah. Allahumma salli ala Muhammad.",
             "action": "Recite the final Tashahhud and conclude your prayer with the Salam greetings"
         },
         "ruku_guide": {
@@ -83,8 +83,23 @@
         }
     },
     "TASBIH_PHASES": [
-        "Allahu akbar",
-        "Alhamdullilah",
-        "Subhanallah"
+        {
+            "arabic": "الله أكبر",
+            "transliteration": "Allahu akbar",
+            "meaning": "Allah is greater",
+            "count": 34
+        },
+        {
+            "arabic": "الحمد لله",
+            "transliteration": "Alhamdulillah",
+            "meaning": "All praise is for Allah",
+            "count": 33
+        },
+        {
+            "arabic": "سبحان الله",
+            "transliteration": "Subhanallah",
+            "meaning": "Glory be to Allah",
+            "count": 33
+        }
     ]
 }
