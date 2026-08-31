@@ -1,0 +1,78 @@
+{
+    "dhikr_array": [
+        "سُبْحَانَ اللَّه",
+        "الْحَمْدُ لِلَّه",
+        "اللَّهُ أَكْبَر"
+    ],
+    "JAFARI_STEPS": {
+        "takbeer": {
+            "title": "Takbeer",
+            "arabic": "اللَّهُ أَكْبَر",
+            "action": "Raise hands to ears and recite Takbeer"
+        },
+        "qiyam_1": {
+            "title": "First Qiyam",
+            "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ...",
+            "action": "Sit upright, remain steady, and recite Surah al-Hamd and a second Surah"
+        },
+        "qiyam_2": {
+            "title": "Second Qiyam",
+            "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ...",
+            "action": "Sit upright and recite Surah al-Hamd and a second Surah before Qunoot"
+        },
+        "qiyam_generic": {
+            "title": "Qiyam",
+            "arabic": "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ...",
+            "action": "Sit upright and recite Tasbihat al-Arba'ah"
+        },
+        "qunoot": {
+            "title": "Qunoot",
+            "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً...",
+            "action": "Raise your hands in front of your face, palms facing up, and recite your supplication"
+        },
+        "ruku": {
+            "title": "Ruku",
+            "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+            "action": "Bow your upper body deeply forward from your seated position"
+        },
+        "sujud_1": {
+            "title": "First Sujud",
+            "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+            "action": "Lean forward and place your forehead firmly down on your Turbah or prostration tablet"
+        },
+        "jalsah": {
+            "title": "Jalsah",
+            "arabic": "أَسْتَغْفِرُ اللَّهَ رَبِّي وَأَتُوبُ إِلَيْهِ",
+            "action": "Sit back upright steadily between your prostrations"
+        },
+        "sujud_2": {
+            "title": "Second Sujud",
+            "arabic": "سُبْحَانَ رَبِّيَ الْأَعْلَىٰ وَبِحَمْدِهِ",
+            "action": "Lean forward for your second prostration"
+        },
+        "tashahhud_mid": {
+            "title": "Tashahhud",
+            "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ...",
+            "action": "Recite the mid-prayer Tashahhud declaration while seated upright"
+        },
+        "tashahhud_final": {
+            "title": "Tashahhud & Salam",
+            "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ... السَّلَامُ عَلَيْكُمْ...",
+            "action": "Recite the final Tashahhud and conclude your prayer with the Salam greetings"
+        },
+        "ruku_guide": {
+            "title": "Ruku Guide",
+            "arabic": "",
+            "action": "Seated Ruku placement rules for wheelchair bounds"
+        },
+        "sujud_guide": {
+            "title": "Sujud Guide",
+            "arabic": "",
+            "action": "Seated Sujud hand placement boundary rules"
+        }
+    },
+    "TASBIH_PHASES": [
+        "Phase 1 text...",
+        "Phase 2 text..."
+    ]
+}
