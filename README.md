@@ -1,60 +1,118 @@
-# At-Tayyar (الطَّيَّار): Seated Jafari Salat Guide 📿♿
+# At-Tayyar (الطَّيَّار): Offline Seated Prayer Guide 📿♿
 
-**At-Tayyar** is a lightweight, privacy-focused, offline desktop companion application specifically designed by and for Muslim wheelchair users and individuals facing physical mobility challenges. 
+At-Tayyar is a private, offline desktop app that helps Muslims perform daily prayers from a seated position with clear visual guidance, Jafari prayer flow support, and built-in tasbih tracking.
 
-Named in honor of **Ja'far al-Tayyar**—the noble companion whom Allah granted wings in Paradise—this application provides an intuitive visual guide to performing daily prayers accurately from a seated position according to the **Jafari Fiqh**.
-
----
-
-## Key Features ✨
-
-*   **Jafari Multi-Rakah Layouts**: Supports accurate structures for Fajr (2 Rakahs), Maghrib (3 Rakahs), and Dhuhr/Asr/Isha (4 Rakahs) prayers, complete with automated transitions for mid-prayer Tashahhud intervals.
-*   **Seated Sujud Guidelines**: Built-in guide detailing the **Rukhsah** (concession) of using the thumb or the back of the hand as a valid Turbah/Mohr substitution for prostration when turbahs/mohr are unavailable for a confusion-free experience.
-*   **Integrated Tasbih Counter**: Automatically transitions into a dedicated tracking board for the **Tasbih of Lady Fatima Zahra (sa)** right after the final Tasleem.
-*   **High-Visibility Corner Counter**: Features an ultra-bright red indicator (`Rakah: X / Y`) in the top-right margin for easy readability and keeping track of Ruku' and Sujud.
-*   **Total Security & Complete Privacy**: Operates 100% offline. Zero tracking scripts, zero internet connectivity, zero database logins, and **absolutely no microphone or camera access**. 
+Designed for accessibility and ease of use, the project offers a calm, no-network prayer companion for users who need a simple, guided approach to worship.
 
 ---
 
-## Control Mechanisms 📲
+## Highlights
 
-To maintain complete physical peace and security without the threat of being spied on, the application features an interface controlled purely by manual input hardware:
-*   **Spacebar, Escape and Backspace Controls**: Follow the steps of making du'a and the Tasbih counter seamlessly by hitting your wireless keyboard's spacebar. You can use the backspace if you make a mistake as well. Press ESC to return the menu.
-
+- Offline-first design with no internet dependency
+- Guided prayer flow for Fajr, Dhuhr, Asr, Maghrib, and Isha
+- Seated prayer support aligned to Jafari practice
+- Built-in tasbih tracking for the Tasbih of Lady Fatima Zahra (sa)
+- High-visibility rakah counter for easy tracking
+- Manual keyboard controls for a calm, private, no-camera/no-microphone experience
 
 ---
 
-## How to Install and Run Locally 💻
+## Key Features
+
+- Jafari Multi-Rakah Layouts: Supports the correct structure for Fajr (2 rakahs), Maghrib (3 rakahs), and Dhuhr/Asr/Isha (4 rakahs), with automated transitions during mid-prayer tashahhud intervals.
+- Seated Sujud Guidance: Includes guidance on the rukhsah of using the thumb or the back of the hand as a valid turbah/mohr substitute when physical prostration aids are unavailable.
+- Integrated Tasbih Counter: Automatically transitions into a dedicated tasbih tracking board after the final tasleem.
+- High-Visibility Corner Counter: Displays a bright red rakah indicator in the interface for quick readability while praying.
+- Privacy and Security: Runs fully offline. There is no tracking, no database login, no internet connection, and no microphone or camera access.
+
+---
+
+## Controls
+
+The application is intentionally designed around simple manual controls to maintain privacy and ease of use:
+
+- Spacebar: move to the next step
+- Backspace: go back to the previous step
+- Escape: exit or cancel the current flow
+
+This keeps the experience simple and accessible without relying on voice or camera input.
+
+---
+
+## Installation and Usage
 
 ### Prerequisites
-Ensure your computer has **Python 3.10+** installed. This project uses Python's native `tkinter` library, meaning it requires **zero external library installations (`pip`)**.
 
-### Repository Structure
-Ensure the following files remain grouped within the same folder directory:
-1.  `jafari_app.py` — The core user interface and navigation engine.
-2.  `data_library.py` — Local dictionary storing all Arabic texts, actions, and phonetic English transliterations.
-3.  `salat_history.txt` — (Automatically generated) Private, offline local data file tracking your daily habits.
+- Python 3.10+
+- Tkinter (included with standard Python installations on Windows)
+- No external package installation required for the current version
 
-### Execution
-Open your terminal directory or command prompt and run the primary script:
+### Quick Start
+
 ```bash
 python jafari_app.py
 ```
 
-*Windows Users*: You can execute the app via your desktop background using a shortcut batch file (`.bat`) pointing to your installation directory:
-```cmd
+### Windows shortcut option
+
+You can also launch it via a batch file:
+
+```bat
 @echo off
-start pythonw "C:\YourFolder\jafari_app.py"
+cd /d "%~dp0"
+start "" pythonw "jafari_app.py"
 ```
 
+### Repository Structure
+
+Ensure the following files remain in the same folder:
+
+- `jafari_app.py` — main app logic and interface
+- `data_library.py` — prayer text, action flow, and transliteration data
+- `prayer_text.json` — prayer content and tasbih instructions
+- `audio.py` — athan playback logic
+- `salat_history.txt` — generated local history file for daily habit tracking
+
 ---
 
-## Fiqh Foundation 📖
-A guide and tool for praying seated and ease of worship (*Rukhsah*) for disabled individuals following the Jafari madhab, utilizing proper recitations during bowing and prostrations. This is something I wished and looked for when I first converted to Islam.
+## Screenshot
+
+A screenshot can be added here to showcase the main interface and prayer flow.
 
 ---
 
-## License 📜
-This software is shared as open-source code for the spiritual and physical benefit of the global Ummah. Feel free to copy, modify, and distribute it to any brother or sister in need of help with prayer.
+## Troubleshooting
 
-*Designed and Developed by klein-apophis11.*
+- If the app does not launch, confirm Python 3.10+ is installed and that `tkinter` is available.
+- If audio playback fails, the app should continue without crashing, but the sound output may be unavailable on the current machine.
+- If the app cannot find data files, verify that all project files remain in the same directory.
+
+---
+
+## Project Status
+
+This project is currently a functional desktop application and a strong personal project with a clear accessibility-focused use case. It is designed for practical use on Windows 10 and is intended as a helpful offline tool rather than a large-scale commercial product.
+
+---
+
+## Roadmap
+
+- Improve packaging for easier Windows distribution
+- Add more robust startup validation
+- Expand automated tests for prayer flow logic and UI edge cases
+- Refine layout and visual polish for a more polished desktop experience
+- Continue improving accessibility and usability for seated prayer practice
+
+---
+
+## Fiqh Foundation
+
+This project aims to support seated worship and ease of prayer for individuals following Jafari practice, with careful attention to the rukhsah and practical guidance that makes prayer more manageable in real-life circumstances.
+
+---
+
+## License
+
+This software is shared as open-source code for the spiritual and practical benefit of the global Ummah. It may be copied, adapted, and distributed freely for personal and educational use.
+
+Designed and developed by klein-apophis11.
