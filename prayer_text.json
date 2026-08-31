@@ -8,56 +8,67 @@
         "takbeer": {
             "title": "Takbeer",
             "arabic": "اللَّهُ أَكْبَر",
+            "transliteration": "Allahu akbar",
             "action": "Raise hands to ears and recite Takbeer"
         },
         "qiyam_1": {
             "title": "First Qiyam",
             "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ...",
+            "transliteration": "Bismillahir-Rahmanir-Raheem, alhamdu lillahi rabbil-'alameem...",
             "action": "Sit upright, remain steady, and recite Surah al-Fatihah and a second Surah"
         },
         "qiyam_2": {
             "title": "Second Qiyam",
             "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ...",
+            "transliteration": "Bismillahir-Rahmanir-Raheem, alhamdu lillahi rabbil-'alameem...",
             "action": "Sit upright and recite Surah al-Fatihah and a second Surah before Qunoot"
         },
         "qiyam_generic": {
             "title": "Qiyam",
             "arabic": "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ...",
+            "transliteration" : "Subḥān Allāh, wa l-ḥamd li-llāh, wa lā ilāh-a illā Allāh, wa Allāh Akbar",
             "action": "Sit upright and recite Tasbihat al-Arba'ah"
         },
         "qunoot": {
             "title": "Qunoot",
             "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً...",
+            "transliteration": "Rabbanā-ghfir lanā dhunūbanā wa isrāfanā fī amrinā, wathabbit aqdāmanā wanṣurnā 'alal-qawmil-kāfirīn",
             "action": "Raise your hands in front of your face, palms facing up, and recite your supplication"
         },
         "ruku": {
             "title": "Ruku",
             "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+            "transliteration": "Subhana Rabbiyal Adheem wa Bihamdihi",
             "action": "Bow your upper body deeply forward from your seated position"
         },
         "sujud_1": {
             "title": "First Sujud",
-            "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+            "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ", 
+            "transliteration": "Subhana Rabbiyal A'la wa bihamdihi",
             "action": "Lean forward and place your forehead firmly down on your thumbs or turbah "
         },
         "jalsah": {
             "title": "Jalsah",
             "arabic": "أَسْتَغْفِرُ اللَّهَ رَبِّي وَأَتُوبُ إِلَيْهِ",
+            "transliteration": "Astaghfirullah wa atubu ilaih",
             "action": "Sit back upright steadily between your prostrations"
         },
         "sujud_2": {
             "title": "Second Sujud",
             "arabic": "سُبْحَانَ رَبِّيَ الْأَعْلَىٰ وَبِحَمْدِهِ",
+            "transliteration":"Subhana Rabbiyal A'la wa bihamdihi",
             "action": "Lean forward for your second prostration"
         },
         "tashahhud_mid": {
             "title": "Tashahhud",
             "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ...",
+            "transliteration": "Ashhadu an lā ilāha illal lāhu waḥdahu lā sharīka lah, wa ashhadu anna muḥammadan ʿabduhu wa rasūluh, allāhumma ṣalli ʿalā muḥammadin wa āli muḥammad.",
             "action": "Recite the mid-prayer Tashahhud declaration while seated upright"
         },
         "tashahhud_final": {
             "title": "Tashahhud & Salam",
             "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ... السَّلَامُ عَلَيْكُمْ...",
+            "transliteration": "Ash-hadu an la ilaha illa-llah, wahdahu la sharika lah, wa ash-hadu anna Muhammadan ‘abduhu wa rasuluh. Allahumma salli ‘ala Muhammadin wa ali Muhammad.",
             "action": "Recite the final Tashahhud and conclude your prayer with the Salam greetings"
         },
         "ruku_guide": {
@@ -68,7 +79,7 @@
         "sujud_guide": {
             "title": "Sujud Guide",
             "arabic": "",
-            "action": "Seated Sujud hand placement boundary rules"
+            "action": "Seated Sujud hand placement for praying in a wheelchair"
         }
     },
     "TASBIH_PHASES": [
