@@ -13,7 +13,7 @@ This project was developed through repeated personal use and iterative improveme
 
 ## About this project
 
-The app is built for Windows 10 and is intended to run locally without any internet dependency, login requirement, or microphone/camera access. It is designed to keep the experience simple, secure, and easy to use during routine prayer practice.
+The app is built for Windows and is intended to run locally without any internet dependency, login requirement, or microphone/camera access. It is designed to keep the experience simple, secure, and easy to use during routine prayer practice.
 
 It includes:
 
