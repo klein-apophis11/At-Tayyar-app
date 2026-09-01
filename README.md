@@ -51,3 +51,79 @@ This keeps the experience simple and accessible without relying on voice or came
 
 ```bash
 python jafari_app.py
+```
+
+### Windows shortcut option
+
+You can also launch it via a batch file:
+
+```bat
+@echo off
+cd /d "%~dp0"
+start "" pythonw "jafari_app.py"
+```
+
+### Repository Structure
+
+Ensure the following files remain in the same folder:
+
+- `jafari_app.py` — main app logic and interface
+- `data_library.py` — prayer text, action flow, and transliteration data
+- `prayer_text.json` — prayer content and tasbih instructions
+- `audio.py` — athan playback logic
+- `salat_history.txt` — generated local history file for daily habit tracking
+
+---
+
+## Screenshot
+
+A screenshot can be added here to showcase the main interface and prayer flow.
+
+---
+
+## Troubleshooting
+
+- If the app does not launch, confirm Python 3.10+ is installed and that `tkinter` is available.
+- If audio playback fails, the app should continue without crashing, but the sound output may be unavailable on the current machine.
+- If the app cannot find data files, verify that all project files remain in the same directory.
+
+---
+
+## Project Status
+
+This project is a functional desktop application and a focused personal project with a clear accessibility-centered purpose. It is designed for practical use on Windows 10 and is intended as a helpful offline tool rather than a large-scale commercial product.
+
+### Validation
+
+The application has been exercised through a full prayer flow in daily use, and the keyboard controls and prayer progression were confirmed to remain stable during a complete session. This real-world validation supports the app's practical usability as a seated prayer guide and activity tracker.
+
+- App launches successfully
+- Prayer selection works
+- Keyboard controls respond correctly
+- Prayer flow advances without crashing
+- Backtrack and escape handling remain stable
+- Manual use across a full session is consistent
+
+---
+
+## Roadmap
+
+- Improve packaging for easier Windows distribution
+- Add more robust startup validation
+- Expand automated tests for prayer flow logic and UI edge cases
+- Refine layout and visual polish for a more polished desktop experience
+- Continue improving accessibility and usability for seated prayer practice
+
+---
+
+## Fiqh Foundation
+
+This project aims to support seated worship and ease of prayer for individuals following Jafari practice, with careful attention to the rukhsah and practical guidance that make prayer more manageable in real-life circumstances.
+
+---
+
+## License
+
+This software is shared as open-source code for the spiritual and practical benefit of the global Ummah. It may be copied, adapted, and distributed freely for personal and educational use.
+
+Designed and developed by klein-apophis11.
