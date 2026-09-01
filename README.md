@@ -1,61 +1,62 @@
 # At-Tayyar (الطَّيَّار): Offline Seated Prayer Guide 📿♿
 
-At-Tayyar is a private, offline desktop app that helps Muslims perform daily prayers from a seated position with clear visual guidance, Jafari prayer flow support, and built-in tasbih tracking.
+At-Tayyar is a private, offline desktop app designed to support Muslims who pray from a seated position. It provides a simple, guided prayer experience with clear instructions, Jafari prayer structure, and tasbih tracking in a calm, privacy-first interface.
 
-Built for accessibility and ease of use, it offers a calm, privacy-first companion for users who need a simple, guided path through worship.
-
----
-
-## Highlights
-
-- Offline-first design with no internet dependency
-- Guided prayer flow for Fajr, Dhuhr, Asr, Maghrib, and Isha
-- Seated prayer support aligned to Jafari practice
-- Built-in tasbih tracking for the Tasbih of Lady Fatima Zahra (sa)
-- High-visibility rakah counter for fast tracking
-- Manual keyboard controls for a private, no-camera, no-microphone experience
+This project was developed through repeated personal use and iterative improvement. The goal was not to build a broad commercial product, but to create a practical and respectful tool for daily prayer support, accessibility, and focused worship.
 
 ---
 
-## Key Features
+## About this project
 
-- Jafari Multi-Rakah Layouts: Supports the correct structure for Fajr (2 rakahs), Maghrib (3 rakahs), and Dhuhr/Asr/Isha (4 rakahs), with automated transitions during mid-prayer tashahhud intervals.
-- Seated Sujud Guidance: Includes guidance on the rukhsah of using the thumb or the back of the hand as a valid turbah/mohr substitute when physical prostration aids are unavailable.
-- Integrated Tasbih Counter: Automatically transitions into a dedicated tasbih tracking board after the final tasleem.
-- High-Visibility Corner Counter: Displays a bright red rakah indicator in the interface for quick readability while praying.
-- Privacy and Security: Runs fully offline. There is no tracking, no database login, no internet connection, and no microphone or camera access.
+The app is built for Windows 10 and is intended to run locally without any internet dependency, login requirement, or microphone/camera access. It is designed to keep the experience simple, secure, and easy to use during routine prayer practice.
+
+It includes:
+
+- guided step-by-step prayer flow
+- support for seated worship and practical prayer adjustments
+- local tasbih tracking
+- clear visual progress counters
+- keyboard-based controls for a private, low-distraction experience
+
+---
+
+## Key features
+
+- Prayer flow support for Fajr, Dhuhr, Asr, Maghrib, and Isha
+- Jafari-aligned multi-rakah layouts for common prayer structures
+- Seated prayer guidance designed for comfort and practical use
+- Tasbih tracking for the Tasbih of Lady Fatima Zahra (sa)
+- Bright, high-contrast rakah indicator for readability during prayer
+- Fully offline operation with no tracking or external services
 
 ---
 
 ## Controls
 
-The application is intentionally designed around simple manual controls to maintain privacy and ease of use:
+The interface is intentionally lightweight and manual for privacy and simplicity:
 
 - Spacebar: move to the next step
 - Backspace: go back to the previous step
-- Escape: exit or cancel the current flow
+- Escape: cancel the current flow
 
-This keeps the experience simple and accessible without relying on voice or camera input.
+This keeps the app focused on the prayer experience without requiring voice control, camera input, or a database.
 
 ---
 
-## Installation and Usage
+## Quick start
 
 ### Prerequisites
 
 - Python 3.10+
-- Tkinter (included with standard Python installations on Windows)
-- No external package installation required for the current version
+- Tkinter, which is included with most standard Windows Python installations
 
-### Quick Start
+### Run the app
 
 ```bash
 python jafari_app.py
 ```
 
-### Windows shortcut option
-
-You can also launch it via a batch file:
+### Optional Windows launcher
 
 ```bat
 @echo off
@@ -63,67 +64,51 @@ cd /d "%~dp0"
 start "" pythonw "jafari_app.py"
 ```
 
-### Repository Structure
+---
 
-Ensure the following files remain in the same folder:
+## Project structure
 
-- `jafari_app.py` — main app logic and interface
-- `data_library.py` — prayer text, action flow, and transliteration data
-- `prayer_text.json` — prayer content and tasbih instructions
-- `audio.py` — athan playback logic
-- `salat_history.txt` — generated local history file for daily habit tracking
+The main files in this project are:
+
+- jafari_app.py — main app interface and prayer flow logic
+- data_library.py — step data and tasbih configuration
+- prayer_text.json — transliteration, meanings, and prayer text content
+- audio.py — adhan playback logic
+- salat_history.txt — generated local daily tracking file
 
 ---
 
-## Screenshot
+## Validation
 
-A screenshot can be added here to showcase the main interface and prayer flow.
+This application has been exercised through real prayer sessions and checked for stable use in daily flow. The app was validated for:
 
----
-
-## Troubleshooting
-
-- If the app does not launch, confirm Python 3.10+ is installed and that `tkinter` is available.
-- If audio playback fails, the app should continue without crashing, but the sound output may be unavailable on the current machine.
-- If the app cannot find data files, verify that all project files remain in the same directory.
-
----
-
-## Project Status
-
-This project is a functional desktop application and a focused personal project with a clear accessibility-centered purpose. It is designed for practical use on Windows 10 and is intended as a helpful offline tool rather than a large-scale commercial product.
-
-### Validation
-
-The application has been exercised through a full prayer flow in daily use, and the keyboard controls and prayer progression were confirmed to remain stable during a complete session. This real-world validation supports the app's practical usability as a seated prayer guide and activity tracker.
-
-- App launches successfully
-- Prayer selection works
-- Keyboard controls respond correctly
-- Prayer flow advances without crashing
-- Backtrack and escape handling remain stable
-- Manual use across a full session is consistent
+- successful launch
+- prayer selection and flow progression
+- keyboard navigation and backtracking
+- escape/cancel behavior
+- stable manual use during a complete prayer session
 
 ---
 
 ## Roadmap
 
-- Improve packaging for easier Windows distribution
-- Add more robust startup validation
-- Expand automated tests for prayer flow logic and UI edge cases
-- Refine layout and visual polish for a more polished desktop experience
-- Continue improving accessibility and usability for seated prayer practice
+Planned improvements include:
+
+- easier Windows packaging for distribution
+- stronger startup validation and error handling
+- broader automated tests for UI and prayer logic
+- further accessibility and visual refinements
 
 ---
 
-## Fiqh Foundation
+## Fiqh and purpose
 
-This project aims to support seated worship and ease of prayer for individuals following Jafari practice, with careful attention to the rukhsah and practical guidance that make prayer more manageable in real-life circumstances.
+The project aims to support seated worship and practical prayer access in a respectful and mindful manner. It reflects a desire to make daily prayer guidance more accessible without sacrificing clarity, privacy, or usability.
 
 ---
 
 ## License
 
-This software is shared as open-source code for the spiritual and practical benefit of the global Ummah. It may be copied, adapted, and distributed freely for personal and educational use.
+This project is shared as open-source code for personal, educational, and spiritual benefit. It may be adapted and redistributed freely for non-commercial use.
 
 Designed and developed by klein-apophis11.

@@ -85,31 +85,50 @@ class JafariSeatedApp:
         self.step_library = JAFARI_STEPS
         self.history_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "salat_history.txt")
 
-        # Button to manually play the Athan
+        # Compact adhan controls for a clearer, more intentional audio panel.
+        self.audio_controls = tk.Frame(self.center_panel, bg="#000000")
+        self.audio_controls.pack(pady=10)
+
+        self.audio_label = tk.Label(
+            self.audio_controls,
+            text="Athan Controls",
+            font=("Arial", 10, "bold"),
+            fg="#FFD54F",
+            bg="#000000",
+            pady=4
+        )
+        self.audio_label.pack(anchor="center")
+
         self.play_button = tk.Button(
-            self.center_panel,
+            self.audio_controls,
             text="Play Athan",
             command=audio.play_athan,
             bg="#1e7e34",
             fg="white",
-            font=("Arial", 12, "bold")
+            font=("Arial", 12, "bold"),
+            width=16,
+            relief="flat",
+            borderwidth=0,
+            pady=6
         )
-        self.play_button.pack(pady=10)
-        
-        # Kick off the prayer time monitoring loop
-        self.check_prayer_times()
-        # Button to stop the Athan immediately
+        self.play_button.pack(side="left", padx=8)
+
         self.stop_button = tk.Button(
-            self.center_panel,
+            self.audio_controls,
             text="Stop Athan",
             command=audio.stop_athan,
             bg="#dc3545",
             fg="white",
-            font=("Arial", 12, "bold")
+            font=("Arial", 12, "bold"),
+            width=16,
+            relief="flat",
+            borderwidth=0,
+            pady=6
         )
-        self.stop_button.pack(pady=10)
-        
+        self.stop_button.pack(side="left", padx=8)
 
+        # Kick off the prayer time monitoring loop
+        self.check_prayer_times()
 
         # Tracking parameters
         self.bind_hover_effect(self.play_button, hover_bg="#218838", normal_bg="#1e7e34")
@@ -123,23 +142,34 @@ class JafariSeatedApp:
         self.launcher_frame = tk.Frame(self.center_panel, bg="#000000")
         self.launcher_frame.pack(expand=True)
 
-        self.clock_label = tk.Label(self.launcher_frame, text="Time: --:--:--", font=("Arial", 16), fg="#555555", bg="#000000")
-        self.clock_label.pack(pady=5)
+        self.clock_label = tk.Label(self.launcher_frame, text="Time: --:--:--", font=("Arial", 14, "bold"), fg="#A0A0A0", bg="#000000")
+        self.clock_label.pack(pady=(0, 8))
 
         current_streak = self.load_local_streak()
         self.streak_label = tk.Label(self.launcher_frame, text=f"🔥 Daily Habit Streak: {current_streak} Days", font=("Arial", 18, "bold"), fg="#FFD54F", bg="#000000")
-        self.streak_label.pack(pady=10)
+        self.streak_label.pack(pady=(0, 12))
 
-        launcher_title = tk.Label(self.launcher_frame, text="Select Your Daily Salat", font=("Bouazzi Maghribi", 28, "bold"), fg="#FFB300", bg="#000000")
-        launcher_title.pack(pady=15)
+        launcher_title = tk.Label(self.launcher_frame, text="Select Your Daily Salat", font=("Arial", 28, "bold"), fg="#FFB300", bg="#000000")
+        launcher_title.pack(pady=(0, 10))
 
-        btn_config = {"font": ("Bouazzi Maghribi", 18, "bold"), "fg": "#FFFFFF", "bg": "#1A1A1A", "activebackground": "#333333", "activeforeground": "#FFFFFF", "width": 25, "pady": 12}
+        subtitle_label = tk.Label(
+            self.launcher_frame,
+            text="Guided, seated, and private for daily prayer support.",
+            font=("Arial", 11, "italic"),
+            fg="#C0C0C0",
+            bg="#000000",
+            wraplength=420,
+            justify="center"
+        )
+        subtitle_label.pack(pady=(0, 18))
+
+        btn_config = {"font": ("Arial", 16, "bold"), "fg": "#FFFFFF", "bg": "#1A1A1A", "activebackground": "#333333", "activeforeground": "#FFFFFF", "width": 28, "pady": 12}
         tk.Button(self.launcher_frame, text="Fajr (2 Rakahs)", command=lambda: self.setup_prayer_flow(2), **btn_config).pack(pady=8)
         tk.Button(self.launcher_frame, text="Maghrib (3 Rakahs)", command=lambda: self.setup_prayer_flow(3), **btn_config).pack(pady=8)
         tk.Button(self.launcher_frame, text="Dhuhr / Asr / Isha (4 Rakahs)", command=lambda: self.setup_prayer_flow(4), **btn_config).pack(pady=8)
 
-        self.alarm_status_label = tk.Label(self.launcher_frame, text="🔒 100% Secure Private Mode • Habit Tracker Active", font=("Arial", 12, "italic"), fg="#00E676", bg="#000000")
-        self.alarm_status_label.pack(pady=20)
+        self.alarm_status_label = tk.Label(self.launcher_frame, text="🔒 Secure Private Mode • Habit Tracker Active", font=("Arial", 12, "italic"), fg="#00E676", bg="#000000")
+        self.alarm_status_label.pack(pady=(18, 0))
 
         # --- ACTIVE PRAYER UI ---
         self.prayer_frame = tk.Frame(self.center_panel, bg="#000000")
