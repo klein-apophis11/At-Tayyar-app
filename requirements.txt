@@ -1,3 +1,11 @@
 # At-Tayyar requirements
-# This project uses Python's built-in tkinter library.
-# No external pip dependencies are required for the current version.
+# Core dependencies
+pygame>=2.0.0  # For adhan playback
+Pillow>=9.0.0  # For image processing (required by ambient_glow and tray icon)
+
+# Optional: System tray support
+pystray>=0.19.0  # For system tray version (jafari_app_tray.py)
+
+# Note: Tkinter is included with standard Python installations on Windows.
+# On Linux: sudo apt-get install python3-tk
+# Pygame mixer requires SDL2; on Linux: sudo apt-get install libsdl2-mixer-2.0-0
