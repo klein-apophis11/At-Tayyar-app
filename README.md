@@ -9,8 +9,6 @@ At-Tayyar is a private, offline desktop app designed to support Muslims who pray
 
 This project was developed through repeated personal use and iterative improvement. The goal was not to build a broad commercial product, but to create a practical and respectful tool for daily prayer support, accessibility, and focused worship. I built this app because I struggled with salah as a disabled Muslim, looking for a guide on how to pray in a wheelchair and do so consistently. That is the mission of this app, named in honor of Jafar ibn Abi Talib (as). To give back to the Ummah, by helping those who struggle with praying in a wheelchair.
 
-https://github.com/user-attachments/assets/53a276d1-f72e-47da-889e-a7a2d8dd9834
-
 
 
 ---
