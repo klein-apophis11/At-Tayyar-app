@@ -78,6 +78,8 @@ This keeps the app focused on the prayer experience without requiring voice cont
 - Run the .exe directly
 - No installation needed
 
+  When you download the .exe on Windows, you may encounter an "Windows Defender SmartScreen / Unknown Publisher" warning if you double-click the .exe. Do not be alarmed, just click on "more info", then "run anyway".
+
 **Option 2: System Tray Version** (Runs in background)
 - Download `At-Tayyar-Tray.exe` from Releases
 - App minimizes to system tray
